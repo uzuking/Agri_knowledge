@@ -1,0 +1,833 @@
+---
+title: "科学の目で見る！ベランダ園芸"
+subtitle: "Volume 1：なぜ？ベランダのトマト栽培 〜日向と日陰、衝撃の収穫差！〜"
+author: "（ここに発表者名）"
+format: 
+  revealjs:
+    theme: solarized
+    transition: slide
+    background-transition: fade
+    slide-number: true
+    chalkboard: true # 'c'キーで黒板モード、'b'キーで手書きモード
+    notes-server: true # 's'キーでスピーカービューを開く
+    incremental: false # ビルドアップはスライドを分ける方式で実現
+lang: ja
+---
+
+## {background-color="#fdf6e3"}
+
+<br>
+<br>
+
+# 科学の目で見る！
+# ベランダ園芸
+
+<br>
+<br>
+
+::: {.notes}
+皆さん、こんにちは！「科学の目で見る！ベランダ園芸」シリーズへようこそ！
+（約15秒）
+:::
+
+---
+
+## {background-image="images/01.jpg"}
+
+<!-- 
+ユーザーへの指示：
+- 画像タイプ：フルスクリーン写真
+- 内容：ベランダで楽しそうに植物に水をやる人の手元。ポジティブな印象。
+- 画像生成AIプロンプト例：
+photo, happy person watering tomato plants on a sunny balcony, lush green leaves, close-up on hands and watering can, warm morning light, high quality, realistic
+-->
+
+::: {.notes}
+このシリーズでは、身近なベランダ園芸をテーマに、科学の面白さを体験していきます。
+（約15秒）
+:::
+
+---
+
+## {background-image="images/02.jpg"}
+
+<!-- 
+ユーザーへの指示：
+- 画像タイプ：フルスクリーン写真
+- 内容：ベランダでがっかりしている人の写真。少しコミカルな雰囲気。
+- 画像生成AIプロンプト例：
+photo, a person looking disappointed at a small, sad-looking plant in a pot on their balcony, humorous, slightly exaggerated sad face, realistic
+-->
+
+::: {.notes}
+さて、皆さんはベランダで家庭菜園を始めて、「思ってたのと違う…」なんて経験、ありませんか？
+（約15秒）
+:::
+
+---
+
+## ひょろひょろ…
+
+::: {.columns}
+::: {.column width="50%"}
+<!-- 
+ユーザーへの指示：
+- 画像タイプ：写真
+- 内容：徒長してひょろひょろに伸びてしまったカイワレ大根や豆苗の写真。
+- 画像生成AIプロンプト例：
+photo, leggy bean sprouts grown indoors, long thin white stems, small green leaves, leaning towards a window, shallow depth of field
+-->
+:::
+::: {.column width="50%"}
+### なんだか元気がなく、ひょろ長く育ってしまう…
+:::
+:::
+
+::: {.notes}
+例えば、こんな風に、なんだか元気がなく、ひょろひょろに育ってしまったり…
+（約15秒）
+:::
+
+---
+
+## 実がつかない…
+
+::: {.columns}
+::: {.column width="50%"}
+<!-- 
+ユーザーへの指示：
+- 画像タイプ：写真
+- 内容：葉はたくさん茂っているのに、実が一つもついていないトマトやナスの写真。
+- 画像生成AIプロンプト例：
+photo, a tomato plant with lush green leaves but no fruit, growing in a pot on a balcony, looks healthy but barren, close-up
+-->
+:::
+::: {.column width="50%"}
+### 葉っぱは元気なのに、なぜか実がつかない…
+:::
+:::
+
+::: {.notes}
+あるいは、葉っぱは元気なのに、なぜか肝心の実がつかなかったり…
+これ、園芸の「あるある」ですよね。
+（約15秒）
+:::
+
+---
+
+## 原因は…？
+
+::: {.columns}
+::: {.column width="50%"}
+<br>
+<br>
+# 土？
+# 水やり？
+# 肥料？
+:::
+::: {.column width="50%"}
+<!-- 
+ユーザーへの指示：
+- 画像タイプ：アイコンの組み合わせ
+- 内容：土、じょうろ、肥料袋のシンプルなアイコンを3つ並べる。
+- 画像生成AIプロンプト例：
+icon set, simple flat icons for soil, watering can, and fertilizer bag, clean design, white background, vector style
+-->
+:::
+:::
+
+::: {.notes}
+原因は、土？水やり？それとも肥料でしょうか？
+もちろん、それらも大事な要素です。
+（約15秒）
+:::
+
+---
+
+## {background-color="#268bd2"}
+
+# でも、一番見落としがちな<br>原因は…
+
+::: {.notes}
+でも、実は一番見落としがちで、そして最も重要な『アレ』が原因かもしれません。
+（約15秒）
+:::
+
+---
+
+## {background-color="#fdf6e3"}
+
+<br>
+<br>
+<br>
+
+# 「光」
+
+<br>
+<br>
+<br>
+
+::: {.notes}
+その最大の容疑者、それは「光」です。
+（約15秒）
+:::
+
+---
+
+## そこで、実験してみました
+
+::: {.notes}
+そこで、一番わかりやすいように、シンプルな実験をしてみました。
+（約15秒）
+:::
+
+---
+
+## 日向 vs 日陰
+
+::: {.columns}
+::: {.column width="50%"}
+<!-- 
+ユーザーへの指示：
+- 画像タイプ：アイコン
+- 内容：太陽のアイコン
+- 画像生成AIプロンプト例：
+simple flat icon of a bright sun, yellow and orange, clean design, vector style
+-->
+### 日向
+:::
+::: {.column width="50%"}
+<!-- 
+ユーザーへの指示：
+- 画像タイプ：アイコン
+- 内容：雲に隠れた太陽のアイコン
+- 画像生成AIプロンプト例：
+simple flat icon of a sun hidden behind a cloud, gray and yellow, clean design, vector style
+-->
+### 日陰
+:::
+:::
+
+::: {.notes}
+同じベランダの「日向」と「日陰」でトマトを育ててみたらどうなるか？
+（約15秒）
+:::
+
+---
+
+## {background-color="#dc322f"}
+
+# とんでもない差が<br>出ました！
+
+::: {.notes}
+その結果…とんでもない差が出たんです！
+今日はその衝撃の結果をデータと共にご覧いただきたいと思います。
+（約15秒）
+:::
+
+---
+
+## 本日の内容
+
+::: {.incremental}
+-   **栽培条件**：フェアな実験です
+-   **生育比較**：見た目でわかる成長の差
+-   **収穫結果**：数字が語る衝撃の事実
+-   **科学解説**：なぜ？の答えは「光合成」
+:::
+
+::: {.notes}
+本日は、こちらの内容でお話しします。
+（約15秒）
+:::
+
+---
+
+## 実験のルール
+
+### 光以外の条件は、すべて同じ
+
+::: {.notes}
+まず、今回の実験がフェアであることをお伝えします。
+光の条件以外は、すべて同じに揃えました。
+（約15秒）
+:::
+
+---
+
+## 同じ品種
+
+::: {.columns}
+::: {.column width="50%"}
+<!-- 
+ユーザーへの指示：
+- 画像タイプ：アイコン＋テキスト
+- 内容：DNAのアイコン
+- 画像生成AIプロンプト例：
+simple flat icon of a DNA helix, blue color, clean design, vector style
+-->
+:::
+::: {.column width="50%"}
+### 同じ品種の苗
+:::
+:::
+
+::: {.notes}
+同じお店で買った、同じ品種のトマトの苗を使います。
+（約15秒）
+:::
+
+---
+
+## 同じ土・鉢
+
+::: {.columns}
+::: {.column width="50%"}
+<!-- 
+ユーザーへの指示：
+- 画像タイプ：アイコン＋テキスト
+- 内容：植木鉢のアイコン
+- 画像生成AIプロンプト例：
+simple flat icon of a plant pot with soil, brown color, clean design, vector style
+-->
+:::
+::: {.column width="50%"}
+### 同じ培養土<br>同じサイズの鉢
+:::
+:::
+
+::: {.notes}
+土も同じメーカーの培養土、鉢も同じサイズのものです。
+（約15秒）
+:::
+
+---
+
+## 同じ水やり
+
+::: {.columns}
+::: {.column width="50%"}
+<!-- 
+ユーザーへの指示：
+- 画像タイプ：アイコン＋テキスト
+- 内容：水滴のアイコン
+- 画像生成AIプロンプト例：
+simple flat icon of a water drop, light blue color, clean design, vector style
+-->
+:::
+::: {.column width="50%"}
+### 同じ頻度と量で
+:::
+:::
+
+::: {.notes}
+水やりの頻度や量も、土の乾き具合を見ながら同じように管理しました。
+（約15秒）
+:::
+
+---
+
+## 唯一の違いは…
+
+### 「光」が当たる量だけ
+
+::: {.notes}
+唯一の違いは、片方は一日中よく日が当たる場所、もう片方は建物の影になる時間が長い場所、ということだけです。
+（約15秒）
+:::
+
+---
+
+## 【生育比較】
+### スタート（定植時）
+
+::: {.columns}
+::: {.column width="50%"}
+#### 日向
+<!-- 
+ユーザーへの指示：
+- 画像タイプ：写真
+- 内容：植えたばかりの健康なトマトの苗。
+- 画像生成AIプロンプト例：
+photo, a small healthy tomato seedling just planted in a pot, bright green leaves, sunny day
+-->
+:::
+::: {.column width="50%"}
+#### 日陰
+<!-- 
+ユーザーへの指示：
+- 画像タイプ：写真
+- 内容：植えたばかりの健康なトマトの苗。（上の写真とほぼ同じもの）
+- 画像生成AIプロンプト例：
+photo, a small healthy tomato seedling just planted in a pot, bright green leaves, sunny day
+-->
+:::
+:::
+
+::: {.notes}
+では、生育過程を見ていきましょう。
+こちらが植えたばかりの頃。どちらも同じ、元気な苗です。
+（約15秒）
+:::
+
+---
+
+## 1ヶ月後（成長期）
+
+::: {.columns}
+::: {.column width="50%"}
+#### 日向
+<!-- 
+ユーザーへの指示：
+- 画像タイプ：写真
+- 内容：がっしりとした茎、濃い緑の葉で元気に育っているトマト。
+- 画像生成AIプロンプト例：
+photo, a healthy tomato plant after one month, strong stem, dark green leaves, growing vigorously in a pot in full sun
+-->
+:::
+::: {.column width="50%"}
+#### 日陰
+<!-- 
+ユーザーへの指示：
+- 画像タイプ：写真
+- 内容：日向に比べて茎が細く、ひょろっと伸びているトマト。葉の色も少し薄い。
+- 画像生成AIプロンプト例：
+photo, a leggy tomato plant after one month, thin stem, pale green leaves, stretching upwards, growing in a pot in the shade
+-->
+:::
+:::
+
+::: {.notes}
+そして1ヶ月後。
+どうでしょうか？ 明らかに違いが出てきましたね。
+（約15秒）
+:::
+
+---
+
+## どこが違う？
+
+::: {.notes}
+具体的にどこが違うか、もう少し詳しく見てみましょう。
+（約15秒）
+:::
+
+---
+
+## 茎の太さ
+
+::: {.columns}
+::: {.column width="50%"}
+#### 日向
+### がっしり
+<!-- 
+ユーザーへの指示：
+- 画像タイプ：写真（ズーム）
+- 内容：日向のトマトのがっしりした茎のズームアップ。
+- 画像生成AIプロンプト例：
+photo, close-up of a thick, strong tomato plant stem, dark green, healthy, in the sun
+-->
+:::
+::: {.column width="50%"}
+#### 日陰
+### ひょろひょろ
+<!-- 
+ユーザーへの指示：
+- 画像タイプ：写真（ズーム）
+- 内容：日陰のトマトの細い茎のズームアップ。
+- 画像生成AIプロンプト例：
+photo, close-up of a thin, leggy tomato plant stem, pale green, weak, in the shade
+-->
+:::
+:::
+
+::: {.notes}
+まず茎の太さ。日向はがっしりしていますが、日陰は細く頼りない感じです。
+（約15秒）
+:::
+
+---
+
+## 葉の色
+
+::: {.columns}
+::: {.column width="50%"}
+#### 日向
+### 濃い緑
+<!-- 
+ユーザーへの指示：
+- 画像タイプ：写真（ズーム）
+- 内容：日向のトマトの濃い緑色の葉のズームアップ。
+- 画像生成AIプロンプト例：
+photo, close-up of a dark green, healthy tomato leaf, vibrant color, in the sun
+-->
+:::
+::: {.column width="50%"}
+#### 日陰
+### 薄い緑
+<!-- 
+ユーザーへの指示：
+- 画像タイプ：写真（ズーム）
+- 内容：日陰のトマトの黄緑色がかった葉のズームアップ。
+- 画像生成AIプロンプト例：
+photo, close-up of a pale, light green tomato leaf, slightly yellowish, in the shade
+-->
+:::
+:::
+
+::: {.notes}
+葉の色も違います。日向は濃い緑、日陰は少し黄色みがかった薄い緑です。
+（約15秒）
+:::
+
+---
+
+## {background-color="#859900"}
+
+### 日陰のトマトは、光を求めて<br>ひょろ長く伸びる
+
+# 「徒長（とちょう）」
+
+### という現象が起きています
+
+::: {.notes}
+このように、光が足りない植物が、光を求めて必死に背伸びをするようにひょろ長く育ってしまう現象を、「徒長」と言います。
+（約15秒）
+:::
+
+---
+
+## 【収穫結果】
+### そして、収穫の時…
+
+::: {.notes}
+そして、いよいよ収穫の時を迎えました。
+その結果は、さらに衝撃的なものでした。
+（約15秒）
+:::
+
+---
+
+## 収穫したトマト
+
+::: {.columns}
+::: {.column width="50%"}
+#### 日向
+<!-- 
+ユーザーへの指示：
+- 画像タイプ：写真
+- 内容：カゴいっぱいに収穫された、赤く熟したたくさんのトマト。
+- 画像生成AIプロンプト例：
+photo, a basket full of ripe, red, shiny tomatoes, freshly harvested, looks delicious, sunny background
+-->
+:::
+::: {.column width="50%"}
+#### 日陰
+<!-- 
+ユーザーへの指示：
+- 画像タイプ：写真
+- 内容：手のひらに数個だけ乗った、小さく色も薄いトマト。
+- 画像生成AIプロンプト例：
+photo, a few small, pale red tomatoes in the palm of a hand, looking slightly unripe and disappointing
+-->
+:::
+:::
+
+::: {.notes}
+こちらが、それぞれの株から収穫できた全量のトマトです。
+一目瞭然ですね。
+（約15秒）
+:::
+
+---
+
+## データで見てみよう
+
+::: {.notes}
+これを、もっと分かりやすくデータで見てみましょう。
+（約15秒）
+:::
+
+---
+
+## 収穫個数
+
+<!-- 
+ユーザーへの指示：
+- 画像タイプ：シンプルな棒グラフ
+- 内容：「日向」と「日陰」の収穫個数を比較するグラフ。日向が圧倒的に多い。
+- 例：日向: 50個, 日陰: 5個
+- 画像生成AIプロンプト例：
+simple bar chart, comparing "Sunny Spot" and "Shady Spot", Y-axis is "Number of Tomatoes Harvested", Sunny Spot bar is very high (e.g., 50), Shady Spot bar is very low (e.g., 5), clean design, blue and gray colors
+-->
+
+::: {.notes}
+まず、収穫できたトマトの個数です。
+日向が50個だったのに対し、日陰はわずか5個でした。
+（約15秒）
+:::
+
+---
+
+## 総重量
+
+<!-- 
+ユーザーへの指示：
+- 画像タイプ：シンプルな棒グラフ
+- 内容：「日向」と「日陰」の収穫総重量を比較するグラフ。日向が圧倒的に重い。
+- 例：日向: 2500g, 日陰: 150g
+- 画像生成AIプロンプト例：
+simple bar chart, comparing "Sunny Spot" and "Shady Spot", Y-axis is "Total Weight of Harvest (g)", Sunny Spot bar is very high (e.g., 2500), Shady Spot bar is very low (e.g., 150), clean design, green and gray colors
+-->
+
+::: {.notes}
+次に、収穫したトマトの総重量です。
+これも大きな差が出ました。
+（約15秒）
+:::
+
+---
+
+## {background-color="#fdf6e3"}
+
+# 収穫量は<br>１０倍以上の差！
+
+::: {.notes}
+なんと、個数も重さも、10倍以上の差がついてしまったのです！
+（約15秒）
+:::
+
+---
+
+## 味は…？
+
+::: {.notes}
+では、肝心の味はどうだったのでしょうか？
+糖度を測ってみました。
+（約15秒）
+:::
+
+---
+
+## 糖度
+
+<!-- 
+ユーザーへの指示：
+- 画像タイプ：シンプルな棒グラフ
+- 内容：「日向」と「日陰」のトマトの糖度を比較するグラフ。
+- 例：日向: 8.0度, 日陰: 5.5度
+- 画像生成AIプロンプト例：
+simple bar chart, comparing "Sunny Spot" and "Shady Spot", Y-axis is "Sugar Content (Brix %)", Sunny Spot bar is high (e.g., 8.0), Shady Spot bar is lower (e.g., 5.5), clean design, red and gray colors
+-->
+
+::: {.notes}
+日向のトマトが糖度8度と、フルーツのように甘かったのに対し、日陰のトマトは5.5度で、少し水っぽい味でした。
+（約15秒）
+:::
+
+---
+
+## {background-color="#fdf6e3"}
+
+# 甘さも、<br>全然ちがう！
+
+::: {.notes}
+甘さも、まったく違う結果になったんです。
+（約15秒）
+:::
+
+---
+
+## なぜ、ここまで<br>差が出たのか？
+
+::: {.notes}
+では、なぜ光が当たるか当たらないかだけで、ここまで大きな差が生まれてしまったのでしょうか。
+（約15秒）
+:::
+
+---
+
+## キーワードは…
+
+::: {.notes}
+そのキーワードは、皆さんも一度は聞いたことがあるはずです。
+（約15秒）
+:::
+
+---
+
+## {background-color="#2aa198"}
+
+<br>
+<br>
+
+# 光合成
+
+<br>
+<br>
+
+::: {.notes}
+そう、「光合成」です。
+（約15秒）
+:::
+
+---
+
+## 簡単に言うと…
+
+::: {.notes}
+光合成を、ものすごく簡単に言うと…
+（約15秒）
+:::
+
+---
+
+## 植物にとって光は
+
+# 「ごはん」
+
+::: {.notes}
+植物にとって、光は「ごはん」なんです。
+（約15秒）
+:::
+
+---
+
+## 光合成 = ごはんを作る工場
+
+::: {.columns}
+::: {.column width="50%"}
+<!-- 
+ユーザーへの指示：
+- 画像タイプ：シンプルな図解
+- 内容：太陽（材料）、葉っぱ（工場）、デンプン・糖（製品）の３つの要素を矢印でつないだ図。
+- 画像生成AIプロンプト例：
+simple infographic, shows a sun icon pointing to a leaf icon (labeled "Factory"), and the leaf icon pointing to a sugar cube icon (labeled "Energy"), concept of photosynthesis, clean flat design
+-->
+:::
+::: {.column width="50%"}
+### 植物は、葉っぱという工場で、**光**をエネルギー源にして、成長するための栄養（ごはん）を作っています。
+:::
+:::
+
+::: {.notes}
+植物は、葉っぱを「ごはんを作る工場」として使っています。
+光というエネルギーを使って、水と二酸化炭素から、自分の体を作ったり、実を甘くしたりするための栄養、つまり「ごはん」を作り出しているのです。
+（約15秒）
+:::
+
+---
+
+## 日向のトマトは…
+
+### ごはんが、いっぱい！
+### → 元気に成長！
+### → 甘くて美味しい実！
+
+::: {.notes}
+つまり、日向で育ったトマトは、たくさんの光を浴びて、ごはんをいっぱい作ることができた。
+だから、元気に大きく成長し、甘くて美味しい実をたくさん作れたわけです。
+（約15秒）
+:::
+
+---
+
+## 日陰のトマトは…
+
+### ごはんが、足りない…
+### → 成長するエネルギー不足…
+### → 実を作る余力がない…
+
+::: {.notes}
+一方、日陰のトマトは、光が足りないので、ごはんを十分に作れませんでした。
+常にエネルギー不足の状態で、生きるのに精一杯。実を大きくしたり、甘くしたりする余力がなかった、ということなんです。
+（約15秒）
+:::
+
+---
+
+## まとめ
+
+::: {.notes}
+今日の話をまとめます。
+（約15秒）
+:::
+
+---
+
+## {background-color="#b58900"}
+
+# 光の「量」が、<br>植物の成長と収穫を<br>大きく左右する！
+
+::: {.notes}
+植物の生育、特に実を収穫したい野菜にとっては、光の「量」が、これほどまでに成長と収穫を左右する、ということがお分かりいただけたかと思います。
+（約15秒）
+:::
+
+---
+
+## ここで、新たな疑問が…
+
+::: {.notes}
+さて、この結果を見て、新たな疑問が湧いてきませんか？
+（約15秒）
+:::
+
+---
+
+## 「あなたのベランダは、<br>十分な光を<br>確保できていますか？」
+
+::: {.notes}
+「うちのベランダは、トマトが元気に育つだけの『ごはん』、つまり光を十分に確保できているんだろうか？」
+（約15秒）
+:::
+
+---
+
+## 「そもそも、ベランダの<br>『日向』って、<br>一日中同じ明るさ？」
+
+::: {.notes}
+「それに、日向といっても、朝と昼と夕方で、光の強さって変わるんじゃないの？」
+そう思った方、素晴らしい視点です。
+（約15秒）
+:::
+
+---
+
+## 次回予告
+
+::: {.notes}
+その答えを探るのが、次回のテーマです。
+（約15秒）
+:::
+
+---
+
+## {background-color="#6c71c4"}
+
+# Vol.2<br>スマホで簡単！<br>ベランダ日照調査
+
+::: {.notes}
+次回は、特別な機材は使いません。皆さんがお持ちのスマートフォンを使って、あなたのベランダの光環境を時間ごとに詳しく調査する方法をご紹介します！
+（約15秒）
+:::
+
+---
+
+## お楽しみに！
+
+::: {.notes}
+自分のベランダのポテンシャルを知る、とても面白い調査になりますよ。
+ぜひ、次回もご覧ください。
+（約15秒）
+:::
+
+---
+
+## ご清聴<br>ありがとうございました
+
+::: {.notes}
+本日はご清聴いただき、ありがとうございました。
+（約15秒）
+:::
+
