@@ -28,23 +28,23 @@ p <- ggplot(tomato_data, aes(x = light_intensity, y = yield_tons)) +
     panel.grid.major = element_line(color = "#ffe0cc", size = 0.3, linetype = "dashed"),
     panel.grid.minor = element_line(color = "#fff3e6", size = 0.2, linetype = "dotted"),
     plot.title = element_text(
-      size = 18, 
-      face = "bold", 
+      size = 27,
+      face = "bold",
       color = "#d84315",
       hjust = 0.5,
       margin = margin(b = 20)
     ),
     plot.subtitle = element_text(
-      size = 12, 
+      size = 18,
       color = "#ff5722",
       hjust = 0.5,
       margin = margin(b = 30)
     ),
-    axis.title = element_text(size = 12, face = "bold", color = "#e64a19"),
-    axis.text = element_text(size = 10, color = "#bf360c"),
+    axis.title = element_text(size = 18, face = "bold", color = "#e64a19"),
+    axis.text = element_text(size = 15, color = "#bf360c"),
     axis.line = element_line(color = "#ff7518", size = 1),
     plot.caption = element_text(
-      size = 9, 
+      size = 14,
       color = "#666666",
       hjust = 0,
       margin = margin(t = 20)
@@ -78,7 +78,7 @@ p <- ggplot(tomato_data, aes(x = light_intensity, y = yield_tons)) +
     aes(label = paste0(yield_tons, "t")),
     vjust = -1.5,
     hjust = 0.5,
-    size = 3.5,
+    size = 5.25,
     color = "#d84315",
     fontface = "bold"
   ) +
@@ -89,7 +89,7 @@ p <- ggplot(tomato_data, aes(x = light_intensity, y = yield_tons)) +
     subtitle = "日射量の増加に伴う収量向上のパターン",
     x = "平均日射量 (MJ/m²/day)",
     y = "収量 (t/10a)",
-    caption = "出典: 矢野 喬 (1993). トマトの秋冬どり栽培における群落内光環境と乾物生産に関する研究. 四国農業試験場報告, 56, p.1-15. (図-2に基づき作成)"
+    caption = "出典: 矢野 喬 (1993). トマトの秋冬どり栽培における群落内光環境と乾物生産に関する研究. \n 四国農業試験場報告, 56, p.1-15. (図-2に基づき作成)"
   ) +
   
   # 軸の範囲とスケールの調整
