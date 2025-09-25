@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>農学の視点で楽しむ！ベランダ菜園入門</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #f0f4f8;
+        }
+
+        /* 16:9 アスペクト比を維持するコンテナ */
+        .aspect-container {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            margin: 1rem auto;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-radius: 0.5rem;
+            overflow: hidden;
+        }
+
+        .slide-deck {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+
+        .slide {
+            display: none;
+            width: 100%;
+            height: 100%;
+            padding: 5%;
+            box-sizing: border-box;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            text-align: left;
+            background-color: #ffffff;
+            background-size: cover;
+            background-position: center;
+            color: #1a202c;
+            line-height: 1.8;
+        }
+
+        .slide.active {
+            display: flex;
+        }
+        
+        /* テキストスタイル */
+        .slide h1, .slide .big-number {
+            font-weight: 900;
+            font-size: clamp(2rem, 8vw, 5rem);
+            margin: 0;
+        }
+        
+        .slide .message {
+            font-size: clamp(1.25rem, 4vw, 2.5rem);
+            font-weight: 700;
+        }
+        
+        .slide .sub-message {
+             font-size: clamp(1rem, 3vw, 2rem);
+        }
+
+        .highlight {
+            color: #dd6b20; /* 濃いオレンジ */
+        }
+
+        /* レイアウトパターン */
+        .layout-icon-keyword .icon-container {
+            display: flex;
+            gap: 2rem;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .layout-icon-keyword .icon {
+            width: clamp(40px, 10vw, 80px);
+            height: clamp(40px, 10vw, 80px);
+        }
+
+        .layout-big-number .big-number {
+             font-size: clamp(5rem, 25vw, 15rem);
+             font-weight: 900;
+             color: #dd6b20;
+        }
+
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <div class="container mx-auto p-4">
+        
+        <div class="aspect-container">
+            <div id="slide-deck" class="slide-deck">
+
+                <!-- パート1：オープニング -->
+                <div class="slide" style="background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(https://placehold.co/1600x900/c6f6d5/38a169?text=ベランダ菜園);">
+                    <h1 class="message">『<span class="highlight">農学の視点</span>で楽しむ！<br>ベランダ菜園入門』</h1>
+                </div>
+                <div class="slide active">
+                    <img src="https://placehold.co/150x150/e2e8f0/4a5568?text=講師" class="rounded-full mb-4" alt="講師アバター">
+                    <p class="message">講師：松嶋 卯月</p>
+                    <p class="sub-message">(農学部 地域環境科学科)</p>
+                </div>
+                <div class="slide layout-icon-keyword">
+                     <div class="icon-container">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+                        <svg class="icon text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    </div>
+                    <p class="message">ご家庭のベランダは、<br>植物にとって<span class="highlight">どんな場所？</span></p>
+                </div>
+                <div class="slide layout-big-number">
+                    <p class="sub-message">講義は全部で</p>
+                    <div class="big-number">7<span class="text-4xl align-baseline">回</span></div>
+                </div>
+                 <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(https://placehold.co/1600x900/fefcbf/d69e2e?text=光);">
+                    <p class="message text-white">第1回</p>
+                    <h1 class="text-white">ベランダの「<span class="text-yellow-300">光</span>」を探る</h1>
+                </div>
+
+                <!-- パート2：掴み・問題提起 -->
+                <div class="slide" style="background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(https://placehold.co/1600x900/e6fffa/4fd1c5?text=家庭菜園);">
+                    <p class="message">ベランダで野菜、<br><span class="highlight">育てていませんか？</span></p>
+                </div>
+                <div class="slide layout-icon-keyword">
+                    <div class="icon-container">
+                        <svg class="icon text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+                        <svg class="icon text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
+                    </div>
+                     <p class="message">食の安全・食育</p>
+                </div>
+                 <div class="slide layout-icon-keyword">
+                     <div class="icon-container">
+                        <svg class="icon text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        <svg class="icon text-red-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+                    </div>
+                     <p class="message">日々の癒し</p>
+                </div>
+                <div class="slide">
+                    <p class="message"><span class="highlight">農学の視点</span>で、もっと楽しく！</p>
+                    <img src="https://placehold.co/800x450/e2e8f0/4a5568?text=虫眼鏡と植物" class="mt-4 rounded-lg shadow-md" alt="虫眼鏡で植物を見ているイラスト">
+                </div>
+                <div class="slide">
+                    <p class="message">私もベランダで<span class="highlight">トマト</span>を育ててみました！</p>
+                     <img src="https://placehold.co/800x450/fed7d7/c53030?text=講師とトマト" class="mt-4 rounded-lg shadow-md" alt="講師がトマトの鉢を持っている写真">
+                </div>
+                <div class="slide layout-icon-keyword">
+                    <div class="icon-container">
+                        <svg class="icon text-yellow-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    </div>
+                    <p class="message">しかし…<br>なかなか<span class="highlight">過酷な環境</span>で…</p>
+                </div>
+                 <div class="slide">
+                    <p class="message">実は、<span class="highlight">うまく育たなかった</span>んです</p>
+                    <img src="https://placehold.co/800x450/e2e8f0/718096?text=元気のないトマト" class="mt-4 rounded-lg shadow-md" alt="少し元気のないトマトの写真">
+                </div>
+                <div class="slide layout-big-number">
+                    <p class="sub-message">失敗の原因は？</p>
+                    <div class="big-number">4<span class="text-4xl align-baseline">つ</span></div>
+                    <p class="message">の環境</p>
+                </div>
+                <div class="slide layout-icon-keyword">
+                     <div class="icon-container">
+                         <svg class="icon text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 14.464A1 1 0 106.465 13.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm-.707-2.122a1 1 0 011.414 0l.707.707a1 1 0 11-1.414 1.414l-.707-.707a1 1 0 010-1.414zM3 11a1 1 0 100-2H2a1 1 0 100 2h1z"/></svg>
+                         <svg class="icon text-red-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.657 7.343A8 8 0 0117.657 18.657z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1014.12 11.88a3 3 0 00-4.242 4.242z" /></svg>
+                         <svg class="icon text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 000 2h6a1 1 0 100-2H7z" clip-rule="evenodd" /></svg>
+                         <svg class="icon text-yellow-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                     </div>
+                    <h1 class="message"><span class="highlight">光</span>・温度・水・土</h1>
+                </div>
+                 <div class="slide">
+                    <p class="message">まずは「<span class="highlight">光環境</span>」から</p>
+                </div>
+                
+                <!-- パート3：本編 - 実験開始 -->
+                 <div class="slide">
+                    <p class="message">植物には「<span class="highlight">光</span>」が不可欠</p>
+                </div>
+                 <div class="slide">
+                    <h1 class="message">光エネルギーで「<span class="highlight">糖</span>」を作る</h1>
+                    <p class="sub-message mt-4 bg-gray-100 p-4 rounded-lg">CO₂ + H₂O → (光) → 糖</p>
+                </div>
+                 <div class="slide layout-icon-keyword">
+                    <p class="message"><span class="highlight">日向</span> vs <span class="highlight">日陰</span></p>
+                    <p class="sub-message">どれくらい違う？</p>
+                </div>
+                 <div class="slide">
+                    <p class="message">我が家のベランダで<span class="highlight">比べてみました</span></p>
+                     <img src="https://placehold.co/800x450/e2e8f0/4a5568?text=ベランダ" class="mt-4 rounded-lg shadow-md" alt="実際のベランダの写真">
+                </div>
+                <div class="slide">
+                     <p class="message">日向（手すり側）と日陰（壁側）</p>
+                     <img src="https://placehold.co/800x450/fed7d7/c53030?text=トマトの鉢+x+2" class="mt-4 rounded-lg shadow-md" alt="2つのトマトの鉢を置いた写真">
+                </div>
+                <div class="slide layout-icon-keyword">
+                     <div class="icon-container">
+                         <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" /></svg>
+                     </div>
+                     <p class="message">比べるための<span class="highlight">ルール</span></p>
+                </div>
+                <div class="slide">
+                    <p class="sub-message">品種</p>
+                    <h1 class="message">ミニトマト「<span class="highlight">マンマミーア</span>」</h1>
+                </div>
+                 <div class="slide">
+                    <p class="sub-message">特徴</p>
+                    <h1 class="message">初心者でも育てやすい「<span class="highlight">ブッシュ型</span>」</h1>
+                </div>
+                <div class="slide">
+                    <p class="sub-message">土</p>
+                    <h1 class="message">市販の「<span class="highlight">鉢植え向きの軽い土</span>」</h1>
+                </div>
+                <div class="slide">
+                    <p class="sub-message">鉢</p>
+                    <h1 class="message">育苗から植え替えまで</h1>
+                </div>
+                <div class="slide">
+                    <p class="sub-message">水やり</p>
+                    <h1 class="message">毎朝、<span class="highlight">同じ量</span>を</h1>
+                </div>
+
+                <!-- パート4：本編 - 生育過程 -->
+                <div class="slide">
+                    <p class="message">成長の違いは？</p>
+                    <img src="https://placehold.co/800x450/c6f6d5/38a169?text=2つの苗" class="mt-4 rounded-lg shadow-md" alt="植えたばかりの2つの苗の写真">
+                </div>
+                <div class="slide">
+                    <p class="sub-message">観察① 生長速度</p>
+                    <h1 class="message"><span class="highlight">日向</span>の方が成長が<span class="highlight">早い</span></h1>
+                </div>
+                 <div class="slide">
+                    <p class="sub-message">観察② 脇芽の数</p>
+                    <h1 class="message"><span class="highlight">日向</span>は脇芽が<span class="highlight">多い</span></h1>
+                </div>
+                <div class="slide">
+                    <h1 class="message">発見！ <span class="highlight">葉の形</span>が違う！</h1>
+                </div>
+                <div class="slide">
+                    <p class="sub-message">日向の葉「陽葉」</p>
+                    <h1 class="message">小さく厚い「<span class="highlight">高出力モデル</span>」</h1>
+                </div>
+                <div class="slide">
+                     <p class="sub-message">日陰の葉「陰葉」</p>
+                     <h1 class="message">薄く大きい「<span class="highlight">集光モデル</span>」</h1>
+                </div>
+                 <div class="slide">
+                    <h1 class="message">光の量に合わせて<span class="highlight">葉の形</span>を変えていた！</h1>
+                </div>
+                <div class="slide">
+                    <p class="sub-message">驚きの戦略</p>
+                    <h1 class="message">植物は環境に「<span class="highlight">適応</span>」する</h1>
+                </div>
+
+                <!-- パート5：本編 - 収穫結果と考察 -->
+                <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://placehold.co/1600x900/f56565/9b2c2c?text=収穫);">
+                    <h1 class="text-white">ついに実が<span class="text-red-300">赤く！</span></h1>
+                </div>
+                <div class="slide layout-big-number">
+                    <p class="sub-message">日向の収穫数</p>
+                    <div class="big-number">45<span class="text-4xl align-baseline">個</span></div>
+                </div>
+                <div class="slide">
+                    <p class="sub-message">日陰のトラブル</p>
+                    <p class="message">最初に採れた実は…</p>
+                    <img src="https://placehold.co/800x450/a0aec0/2d3748?text=尻腐れ症" class="mt-4 rounded-lg shadow-md" alt="尻腐れ症のトマトの写真">
+                </div>
+                <div class="slide">
+                    <h1 class="message">尻腐れ症とは？</h1>
+                    <p class="sub-message">おしりが黒くなる症状</p>
+                </div>
+                <div class="slide">
+                    <p class="sub-message">原因</p>
+                    <h1 class="message"><span class="highlight">カルシウム不足</span>による「生理障害」</h1>
+                </div>
+                <div class="slide">
+                    <p class="sub-message">なぜ日陰で？ (仮説)</p>
+                    <h1 class="message">蒸散が弱く、<br>カルシウムが届かなかった？</h1>
+                </div>
+                <div class="slide">
+                    <p class="sub-message">教訓</p>
+                    <h1 class="message">光以外の<span class="highlight">環境</span>も大切</h1>
+                </div>
+                <div class="slide layout-big-number">
+                    <p class="sub-message">日陰の収穫数</p>
+                    <div class="big-number">23<span class="text-4xl align-baseline">個</span></div>
+                </div>
+                <div class="slide">
+                    <h1 class="message">収穫数の比較</h1>
+                    <p class="sub-message mt-4 text-3xl font-bold">日向 <span class="text-5xl text-red-500">45</span>個 vs 日陰 <span class="text-5xl text-blue-500">23</span>個</p>
+                </div>
+                <div class="slide layout-big-number">
+                    <p class="message">収穫量は<br>約<span class="highlight">2倍</span>の差！</p>
+                </div>
+
+                <!-- パート6：本編 - 科学的データ -->
+                <div class="slide">
+                    <p class="sub-message">科学的な裏付け</p>
+                    <h1 class="message">研究データを<br>見てみよう</h1>
+                </div>
+                <div class="slide">
+                    <p class="message">データ① <span class="highlight">光の量とトマトの収量</span></p>
+                    <div class="w-full max-w-4xl mx-auto mt-4 p-4 bg-white rounded-lg shadow-inner">
+                        <svg viewBox="0 0 800 500" class="w-full h-full" aria-labelledby="chart-title chart-desc">
+                            <title id="chart-title">光の量とトマトの収量の関係</title>
+                            <desc id="chart-desc">平均日射量が増えるにつれて、トマトの収量が比例して増加することを示す折れ線グラフです。</desc>
+                            
+                            <!-- Axes and Grid -->
+                            <g class="text-gray-400 text-xl" stroke="currentColor" stroke-width="1">
+                                <!-- Y-axis grid lines and labels -->
+                                <text x="45" y="435" text-anchor="end">6000</text>
+                                <line x1="50" y1="430" x2="780" y2="430" class="opacity-20"></line>
+                                <text x="45" y="355" text-anchor="end">8000</text>
+                                <line x1="50" y1="350" x2="780" y2="350" class="opacity-20"></line>
+                                <text x="45" y="275" text-anchor="end">10000</text>
+                                <line x1="50" y1="270" x2="780" y2="270" class="opacity-20"></line>
+                                <text x="45" y="195" text-anchor="end">12000</text>
+                                <line x1="50" y1="190" x2="780" y2="190" class="opacity-20"></line>
+                                
+                                <!-- X-axis labels -->
+                                <text x="50" y="465" text-anchor="middle">6.0</text>
+                                <text x="278" y="465" text-anchor="middle">7.5</text>
+                                <text x="598" y="465" text-anchor="middle">9.6</text>
+                                <text x="780" y="465" text-anchor="middle">10.8</text>
+
+                                <!-- Axis Lines -->
+                                <line x1="50" y1="50" x2="50" y2="430" stroke-width="2"></line>
+                                <line x1="50" y1="430" x2="780" y2="430" stroke-width="2"></line>
+                            </g>
+
+                             <!-- Axis Titles -->
+                            <text x="15" y="250" class="text-2xl fill-current text-gray-600" transform="rotate(-90, 15, 250)">収量 (kg/10a)</text>
+                            <text x="415" y="490" text-anchor="middle" class="text-2xl fill-current text-gray-600">平均日射量 (MJ/m²/day)</text>
+
+                            <!-- Data line -->
+                            <polyline fill="none" stroke="#dd6b20" stroke-width="4" points="
+                                50, 430
+                                217, 367
+                                278, 311
+                                369, 269
+                                475, 170
+                                598, 142
+                                689, 93
+                                780, 50
+                            "/>
+                            
+                            <!-- Data points -->
+                             <g fill="#dd6b20">
+                                <circle cx="50" cy="430" r="6"></circle>
+                                <circle cx="217" cy="367" r="6"></circle>
+                                <circle cx="278" cy="311" r="6"></circle>
+                                <circle cx="369" cy="269" r="6"></circle>
+                                <circle cx="475" cy="170" r="6"></circle>
+                                <circle cx="598" cy="142" r="6"></circle>
+                                <circle cx="689" cy="93" r="6"></circle>
+                                <circle cx="780" cy="50" r="6"></circle>
+                            </g>
+                        </svg>
+                    </div>
+                     <p class="text-xs text-gray-500 mt-1 text-right w-full max-w-4xl mx-auto pr-4">
+                        出典: 矢野 喬 (1993). を基に作成
+                    </p>
+                </div>
+                 <div class="slide">
+                    <h1 class="message">光が強いほど、収量は<br>ほぼ<span class="highlight">比例</span>して増加</h1>
+                </div>
+                 <div class="slide">
+                    <p class="sub-message">トマトの性質</p>
+                    <h1 class="message">光を好む「<span class="highlight">陽生植物</span>」</h1>
+                </div>
+                 <div class="slide">
+                    <p class="sub-message">反対の性質</p>
+                    <h1 class="message">強い光が苦手な「<span class="highlight">陰生植物</span>」</h1>
+                </div>
+                <div class="slide">
+                    <p class="sub-message">陰生植物の例</p>
+                    <h1 class="message">ミョウガ、ミツバ、シソ</h1>
+                </div>
+                <div class="slide">
+                    <h1 class="message">植物の<span class="highlight">性質</span>に合わせた<br><span class="highlight">場所選び</span>が重要</h1>
+                </div>
+                 <div class="slide">
+                    <p class="sub-message">次の視点：品質</p>
+                    <h1 class="message">量だけじゃない、「<span class="highlight">味</span>」はどう？</h1>
+                </div>
+                <div class="slide">
+                    <p class="message">データ② <span class="highlight">光の量とトマトの糖度</span></p>
+                    <img src="https://placehold.co/1200x600/fff5f5/c53030?text=グラフ：積算日射量と糖度" class="mt-4 rounded-lg shadow-md" alt="グラフ：積算日射量と糖度">
+                </div>
+                <div class="slide">
+                    <h1 class="message">光が多いほど、糖度も<br><span class="highlight">比例</span>して高くなる</h1>
+                </div>
+                <div class="slide">
+                    <h1 class="message">光がトマトの「<span class="highlight">甘さ</span>」を決める！</h1>
+                </div>
+                <div class="slide">
+                    <h1 class="message">おいしいトマト = <span class="highlight">たくさんの光</span></h1>
+                </div>
+
+                <!-- パート7：まとめと次回予告 -->
+                <div class="slide">
+                    <p class="sub-message">今回の結論</p>
+                    <h1 class="message">おいしいトマトを育てるには<br>「<span class="highlight">日当たりの良い場所</span>」を選ぼう！</h1>
+                </div>
+                 <div class="slide">
+                    <p class="sub-message">新たな疑問</p>
+                    <h1 class="message">でも、ベランダの光って<br>一日中<span class="highlight">同じ</span>？</h1>
+                </div>
+                <div class="slide">
+                     <p class="sub-message">次回予告</p>
+                     <h1 class="message">ベランダの場所別「<span class="highlight">光の変化</span>」と<br>「<span class="highlight">日陰向きの植物選び</span>」</h1>
+                </div>
+                <div class="slide" style="background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(https://placehold.co/1600x900/c6f6d5/38a169?text=Thank+You);">
+                    <h1 class="message">次回もお楽しみに！</h1>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <script>
+        const slides = document.querySelectorAll('.slide');
+
+        let currentSlide = 0;
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            // 現在のスライドを非表示にする
+            slides[currentSlide].classList.remove('active');
+
+            // 新しいインデックスを計算
+            currentSlide = (index + totalSlides) % totalSlides;
+
+            // 新しいスライドを表示
+            slides[currentSlide].classList.add('active');
+
+        }
+        
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') {
+                showSlide(currentSlide - 1);
+            } else if (e.key === 'ArrowRight') {
+                showSlide(currentSlide + 1);
+            }
+        });
+
+        // 初期表示
+        showSlide(0);
+    </script>
+</body>
+</html>
+
+
+
